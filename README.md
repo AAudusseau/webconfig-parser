@@ -9,7 +9,7 @@ var WCParser = require('webconfig-parser');
 var config = WCParser.parse();
 ```
 
-The <code>parse</code> function return a Javascript with th following structure :
+The <code>parse</code> function return a Javascript object with the following structure :
 ```javascript
 {
 param1Key: param1Value,

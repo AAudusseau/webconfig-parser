@@ -1,0 +1,31 @@
+{
+  "name": "webconfig-parser",
+  "description": "A small library to parse Web.config XML parameters into Javascript object",
+  "version": "0.0.1",
+  "keywords": [
+    "parser",
+    "web.config"
+  ],
+  "engines": {
+    "node": ">=0.8.x"
+  },
+  "author": {
+    "name": "Antoine Audusseau",
+    "url": "https://github.com/AAudusseau"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AAudusseau/webconfig-parser.git"
+  },
+  "bugs": "http://github.com/AAudusseau/webconfig-parser/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "dependencies": {
+    "lodash": "^2.4.1",
+    "xmldom": "^0.1.19"
+  }
+}

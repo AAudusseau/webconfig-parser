@@ -1,7 +1,7 @@
 {
   "name": "webconfig-parser",
   "description": "A small library to parse Web.config XML parameters into Javascript object",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": [
     "parser",
     "web.config"

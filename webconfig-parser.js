@@ -25,7 +25,8 @@ parser.parse = function (options) {
         encoding: 'utf8',
         tagName: 'add',
         keyAttrName: 'key',
-        valueAttrName: 'value'
+        valueAttrName: 'value',
+        readConnectionStrings: false
     });
 
     var config = {};
@@ -47,7 +48,22 @@ parser.parse = function (options) {
         }
     }
 
+    if (!options.readConnectionStrings) return config;
+
+    config.connectionStrings = {};
+
+    /* Get connection string */
+    var connStrNode = doc.getElementsByTagName('connectionStrings');
+    var connStrEntries = connStrNode.item(0).getElementsByTagName('add');
+    for (var i = connStrEntries.length - 1; i >= 0; i--) {
+        var entry = connStrEntries.item(i);
+        if (entry.hasAttribute('connectionString')) {
+            config.connectionStrings[entry.getAttribute('name')] = entry.getAttribute('connectionString');
+        }
+    };
+    
     return config;
+    
 };
 
 

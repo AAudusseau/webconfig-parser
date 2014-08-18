@@ -21,7 +21,7 @@ param2Key: param2Value,
 ## Options
 
 The <code>parse</code> function accept the following options:
-* <code>url</code>: The relative path to access the Web.config file. You need to include the filename (Default to *Web.config*)
+* <code>url</code>: The absolute path to access the Web.config file. You need to include the filename (Default to *./../../Web.config* relative from the module script)
 * <code>tagName</code>: The name of the tag containing the parameters (Default to *add*)
 * <code>keyAttrName</code>: The name of the attribute containing the parameter key (Default to *key*)
 * <code>valueAttrName</code>: The name of the attribute containing the parameter value (Default to *value*)

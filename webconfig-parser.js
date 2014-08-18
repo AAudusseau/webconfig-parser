@@ -21,7 +21,7 @@ parser.parse = function (options) {
     if (!_.isObject(options)) return;
 
     options = _.defaults(options, {
-        url: './Web.config',
+        url: path.join(__dirname, './../../Web.config'),
         encoding: 'utf8',
         tagName: 'add',
         keyAttrName: 'key',
@@ -30,10 +30,8 @@ parser.parse = function (options) {
 
     var config = {};
 
-    var parentDir = path.dirname(require.main.filename);
-
     /* Read of the Web.config file */
-    var webConfigXML = fs.readFileSync(path.join(parentDir, options.url), {
+    var webConfigXML = fs.readFileSync(options.url, {
         encoding: options.encoding
     });
 

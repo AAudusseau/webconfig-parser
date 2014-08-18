@@ -18,6 +18,8 @@ param2Key: param2Value,
 }
 ```
 
+If the <code>readConnectionStrings</code> option is set to _true_ the Javascript object returned contains a <code>connectionStrings</code> property which is an object.
+
 ## Options
 
 The <code>parse</code> function accept the following options:
@@ -25,6 +27,7 @@ The <code>parse</code> function accept the following options:
 * <code>tagName</code>: The name of the tag containing the parameters (Default to *add*)
 * <code>keyAttrName</code>: The name of the attribute containing the parameter key (Default to *key*)
 * <code>valueAttrName</code>: The name of the attribute containing the parameter value (Default to *value*)
+* <code>readConnectionStrings</code>: A boolean indicate if you need to retrieve connectionStrings entries (Default to *false*)
 
 ## License
 

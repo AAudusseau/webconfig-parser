@@ -20,7 +20,7 @@
   "bugs": "http://github.com/AAudusseau/webconfig-parser/issues",
   "license": "MIT",
   "dependencies": {
-    "lodash": "^2.4.1",
-    "xmldom": "^0.1.19"
+    "lodash": "^4.5.0",
+    "xmldom": "^0.1.22"
   }
 }

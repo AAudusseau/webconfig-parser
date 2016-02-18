@@ -18,12 +18,7 @@
     "url": "https://github.com/AAudusseau/webconfig-parser.git"
   },
   "bugs": "http://github.com/AAudusseau/webconfig-parser/issues",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://www.opensource.org/licenses/mit-license.php"
-    }
-  ],
+  "license": "MIT",
   "dependencies": {
     "lodash": "^2.4.1",
     "xmldom": "^0.1.19"

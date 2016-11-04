@@ -41,7 +41,7 @@ parser.parse = function (options) {
 
     /* Retrieve all parameters entries */
     var paramsEntries = doc.getElementsByTagName(options.tagName);
-    for (var i = paramsEntries.length - 1; i >= 0; i--) {
+    for (var i = 0 ; i < paramsEntries.length ; i++) {
         var param = paramsEntries.item(i);
         if (param.hasAttribute(options.keyAttrName)) {
             config[param.getAttribute(options.keyAttrName)] = param.getAttribute(options.valueAttrName);
